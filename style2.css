@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f3f6;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background-color: #f1f3f6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.back-btn {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: #fff;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about img {
+  width: 180px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-box {
+  max-width: 500px;
+}
+
+.role {
+  margin-top: -10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.desc {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contacts, .more-info {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* SOFTWARE */
+.software {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f1f3f6;
+}
+
+.software h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-gallery img {
+  width: 170px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
