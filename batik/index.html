@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pameran Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-amber-800">Batik Indonesia</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#home" class="hover:text-amber-600">Home</a>
+        <a href="#tentang" class="hover:text-amber-600">Tentang</a>
+        <a href="#sejarah" class="hover:text-amber-600">Sejarah</a>
+        <a href="#galeri" class="hover:text-amber-600">Galeri</a>
+        <a href="#kontak" class="hover:text-amber-600">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider dengan overlay -->
+  <section id="home" class="pt-20 relative">
+    <div class="relative overflow-hidden">
+      <!-- Slider -->
+      <div id="slider" class="flex transition-transform duration-700">
+        <img src="bg.jpg"  class="w-screen flex-none h-[60vh] object-cover" />
+        <img src="bg2.jpg" class="w-screen flex-none h-[60vh] object-cover" />
+        <img src="bg3.jpg" class="w-screen flex-none h-[60vh] object-cover" />
+      </div>
+
+      <!-- Overlay gradasi + motif -->
+      <div class="absolute inset-0 bg-gradient-to-r from-amber-900/60 via-amber-800/60 to-amber-700/60"></div>
+      <div class="absolute inset-0 bg-[url('batik-overlay.png')] opacity-25 bg-repeat mix-blend-overlay"></div>
+
+      <!-- Teks Hero -->
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
+          Warisan Budaya Nusantara
+        </h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl">
+          Keindahan Batik Indonesia Yang Mendunia.
+        </p>
+      </div>
+
+      <!-- Kontrol Slider -->
+      <button id="prev"
+        class="absolute left-5 top-1/2 -translate-y-1/2 bg-amber-100/70 hover:bg-amber-200 rounded-full p-2 text-amber-900">❮</button>
+      <button id="next"
+        class="absolute right-5 top-1/2 -translate-y-1/2 bg-amber-100/70 hover:bg-amber-200 rounded-full p-2 text-amber-900">❯</button>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-amber-800">Tentang Batik Indonesia</h2>
+    <p class="leading-relaxed text-lg text-gray-700">
+      Batik Indonesia adalah warisan budaya dunia yang telah diakui UNESCO sejak tahun 2009. 
+      Setiap corak, warna, dan motif batik memiliki makna filosofis yang dalam, mencerminkan nilai kehidupan, alam, serta perjalanan sejarah bangsa. 
+      Batik bukan hanya sekadar kain, tetapi juga media ekspresi seni yang menggambarkan identitas dan jati diri masyarakat Indonesia. 
+      Hingga kini, batik dipakai dalam berbagai acara, baik resmi maupun sehari-hari, sebagai wujud kebanggaan budaya.
+    </p>
+  </section>
+
+  <!-- Sejarah -->
+  <section id="sejarah" class="bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-6 text-amber-800">Sejarah Batik Indonesia</h2>
+      <p class="leading-relaxed text-lg text-gray-700">
+        Sejarah batik telah ada sejak masa kerajaan-kerajaan Jawa kuno. 
+        Pada awalnya, batik berkembang di lingkungan keraton sebagai simbol status sosial dan spiritual. 
+        Setiap daerah melahirkan ciri khasnya sendiri: <br><br>
+        - Yogyakarta & Solo dengan batik warna sogan dan motif parang. <br>
+        - Cirebon dengan motif Megamendung. <br>
+        - Lasem dengan warna merah menyala khas Merah Lasem. <br>
+        - Pekalongan dengan batik pesisir yang cerah. <br><br>
+        Perjalanan batik dari keraton hingga ke masyarakat luas menunjukkan bagaimana budaya ini mampu beradaptasi 
+        dengan zaman, sekaligus tetap mempertahankan nilai tradisi yang mendalam.
+      </p>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-10 text-amber-800">Galeri Batik</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- 1 -->
+      <a href="single.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+        <img src="kainjogja.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-amber-800">Batik Yogyakarta</h3>
+          <p class="text-gray-600 text-sm">Motif klasik kerajaan Mataram.</p>
+        </div>
+      </a>
+
+      <!-- 2 -->
+      <a href="single1.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+        <img src="kainsolo.jpg"class="w-full h-64 object-cover group-hover:scale-105 transition" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-amber-800">Batik Solo</h3>
+          <p class="text-gray-600 text-sm">Ciri khas warna sogan dan motif parang.</p>
+        </div>
+      </a>
+      
+      <!-- 3 -->
+      <a href="single2.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+        <img src="kaincirebon.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-amber-800">Batik Cirebon</h3>
+          <p class="text-gray-600 text-sm">Motif Mega Mendung yang ikonik</p>
+        </div>
+      </a>
+
+      <!-- 4 -->
+      <a href="single3.html" class="group shadow hover:shadow-lg rounded-xl overflow-hidden bg-white">
+        <img src="kainlasem.jpg" class="w-full h-64 object-cover group-hover:scale-105 transition" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-amber-800">Batik Lasem</h3>
+          <p class="text-gray-600 text-sm">Perpaduan budaya Tionghoa & Jawa.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Kontak -->
+<section id="kontak" class="bg-white text-gray-800 py-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Info Kontak -->
+    <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+      <h2 class="text-3xl font-bold text-amber-600 mb-6">Kontak Kami</h2>
+      <p class="mb-4"><i class="fas fa-phone text-amber-600 mr-3"></i> 0341-478195</p>
+      <p class="mb-4"><i class="fas fa-envelope text-amber-600 mr-3"></i> info@smkn5malang.sch.id</p>
+      <p class="mb-6"><i class="fas fa-map-marker-alt text-amber-600 mr-3"></i> Jl. Terusan Ikan Piranha Atas No.50, Malang</p>
+      
+      <!-- Sosmed -->
+      <div class="flex space-x-5 text-2xl">
+        <a href="https://www.facebook.com/share/1GDroWuQTY/" class="hover:text-amber-600"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/smkn.5.malang?igsh=ZzR4b2lwaTE0eG9i" class="hover:text-amber-600"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@smkn5malang-vh5?si=0iIGB8gcjFrGnFaq" class="hover:text-amber-600"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+    <!-- Map -->
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5219200922464!2d112.6355654740433!3d-7.930298979230825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628236b4f4979%3A0x44e5d79f28f6faca!2sSMK%20Negeri%205%20Kota%20Malang!5e0!3m2!1sid!2sid!4v1695976000000!5m2!1sid!2sid" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- Footer -->
+<footer class="bg-amber-800 text-white py-8">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    
+    <!-- Kolom 1 -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Batik Indonesia</h3>
+      <p class="text-sm text-amber-100">
+        Website pameran batik untuk melestarikan budaya dan mengenalkan keindahan motif batik Indonesia ke dunia.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-amber-100">
+        <li><a href="#home" class="hover:text-white">Home</a></li>
+        <li><a href="#tentang" class="hover:text-white">Tentang</a></li>
+        <li><a href="#sejarah" class="hover:text-white">Sejarah</a></li>
+        <li><a href="#galeri" class="hover:text-white">Galeri</a></li>
+        <li><a href="#kontak" class="hover:text-white">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Galeri Produk -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Galeri Produk</h3>
+      <ul class="space-y-2 text-amber-100">
+        <li><a href="single.html" class="hover:text-white">Batik Jogja</a></li>
+        <li><a href="single1.html" class="hover:text-white">Batik Solo</a></li>
+        <li><a href="single2.html" class="hover:text-white">Batik Cirebon</a></li>
+        <li><a href="single3.html" class="hover:text-white">Batik Lasem</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Follow Me (paling kanan) -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+      <div class="flex space-x-5 text-lg">
+        <a href="https://www.instagram.com/seellnnta_?igsh=MWg3MjFodW5tY2Vmbg==" class="hover:text-amber-400 flex items-center">
+          <i class="fab fa-instagram mr-2"></i> seellnnta_
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-8 border-t border-amber-700 pt-4 text-sm text-amber-100">
+    © 2025 Pameran Batik Indonesia. Smkn 5 Malang.
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
