@@ -11,19 +11,41 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-amber-800">Batik Indonesia</h1>
-      <nav class="space-x-6 text-lg">
-        <a href="#home" class="hover:text-amber-600">Home</a>
-        <a href="#tentang" class="hover:text-amber-600">Tentang</a>
-        <a href="#sejarah" class="hover:text-amber-600">Sejarah</a>
-        <a href="#galeri" class="hover:text-amber-600">Galeri</a>
-        <a href="#kontak" class="hover:text-amber-600">Kontak</a>
-      </nav>
-    </div>
-  </header>
+ <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-amber-800">Batik Indonesia</h1>
+
+    <!-- Tombol Hamburger (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-amber-800 focus:outline-none">
+      <!-- Icon hamburger -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menu -->
+    <nav id="menu" class="hidden md:flex space-x-6 text-lg">
+      <a href="#home" class="hover:text-amber-600">Home</a>
+      <a href="#tentang" class="hover:text-amber-600">Tentang</a>
+      <a href="#sejarah" class="hover:text-amber-600">Sejarah</a>
+      <a href="#galeri" class="hover:text-amber-600">Galeri</a>
+      <a href="#kontak" class="hover:text-amber-600">Kontak</a>
+    </nav>
+  </div>
+
+  <!-- Menu Dropdown Mobile -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md shadow p-4 space-y-4">
+    <a href="#home" class="block hover:text-amber-600">Home</a>
+    <a href="#tentang" class="block hover:text-amber-600">Tentang</a>
+    <a href="#sejarah" class="block hover:text-amber-600">Sejarah</a>
+    <a href="#galeri" class="block hover:text-amber-600">Galeri</a>
+    <a href="#kontak" class="block hover:text-amber-600">Kontak</a>
+  </div>
+</header>
 
   <!-- Hero Slider dengan overlay -->
   <section id="home" class="pt-20 relative">

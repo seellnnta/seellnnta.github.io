@@ -17,3 +17,11 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   slider.style.transform = `translateX(-${index * 100}%)`;
 }, 5000);
+
+// hambuerger
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });     
