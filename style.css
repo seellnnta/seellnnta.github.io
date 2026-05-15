@@ -1,20 +1,52 @@
+/* JUMBOTRON */
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2edff;
+  background-color: #ffe6f0; /* pink pastel */
 }
 
+/* PROJECTS */
 #projects {
-  background-color: #e2edff;
+  background-color: #ffe6f0;
 }
 
+/* SECTION */
 section {
   padding-top: 5rem;
 }
 
-/* My Keyboard Section */
+/* NAVBAR (override bootstrap) */
+.navbar {
+  background-color: #ff69b4 !important;
+}
+
+/* BUTTON */
+.btn-primary {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+}
+
+.btn-primary:hover {
+  background-color: #ff1493;
+  border-color: #ff1493;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ff69b4 !important;
+}
+
+/* JUDUL */
+h1, h2 {
+  color: #ff1493;
+}
+
+/* ========================= */
+/* MY KEYBOARD SECTION */
+/* ========================= */
+
 .keyboard-box {
   position: relative;
-  background-color: #0c6efd;
+  background-color: #ff69b4; /* ganti biru jadi pink */
   height: 500px;
   transform-style: preserve-3d;
 }
@@ -99,4 +131,60 @@ section {
 
 .keyboard-box:hover .keyboard-img {
   transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ========================= */
+/* PINK CUSTOM BOOTSTRAP OVERRIDE */
+/* ========================= */
+
+/* Background pink */
+.bg-pink {
+  background-color: #ff69b4 !important;
+}
+
+/* Button solid pink */
+.btn-pink {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+  color: #fff;
+}
+
+.btn-pink:hover {
+  background-color: #ff1493;
+  border-color: #ff1493;
+  color: #fff;
+}
+
+/* Button outline pink */
+.btn-outline-pink {
+  color: #ff1493;
+  border-color: #ff69b4;
+  background-color: transparent;
+}
+
+.btn-outline-pink:hover {
+  background-color: #ff69b4;
+  border-color: #ff69b4;
+  color: #fff;
+}
+
+/* Alert pink */
+.alert-pink {
+  background-color: #ffe6f0;
+  border-color: #ff69b4;
+  color: #c2185b;
+}
+
+/* SVG wave about section */
+section#about svg path {
+  fill: #ffe6f0 !important;
 }
