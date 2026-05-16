@@ -327,8 +327,10 @@
         });
       </script>
 
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
       <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9HUqlONt5IbL50bVMcDSprSQ8IANgq88YTEjHc6ZmN9PRxK1JGecJa4p4Ll-obdP_/exec';
+        emailjs.init("mM0juAz25o4QbG_1r");
+
         const form = document.forms["wpu-contact-form"];
         const btnKirim = document.querySelector(".btn-kirim");
         const btnLoading = document.querySelector(".btn-loading");
@@ -336,22 +338,22 @@
 
         form.addEventListener("submit", (e) => {
           e.preventDefault();
-          // ketika tombol submit diklik
-          // tampilkan tombol loading, hilangkan tombol kirim
           btnLoading.classList.toggle("d-none");
           btnKirim.classList.toggle("d-none");
-          fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then((response) => {
-              // tampilkan tombol kirim, hilangkan tombol loading
+
+          emailjs.sendForm("service_q7de55p", "template_dv2h6e6", form)
+            .then(() => {
               btnLoading.classList.toggle("d-none");
               btnKirim.classList.toggle("d-none");
-              // tampilkan alert
               myAlert.classList.toggle("d-none");
-              // reset formnya
               form.reset();
-              console.log("Success!", response);
+              console.log("Success!");
             })
-            .catch((error) => console.error("Error!", error.message));
+            .catch((error) => {
+              btnLoading.classList.toggle("d-none");
+              btnKirim.classList.toggle("d-none");
+              console.error("Error!", error);
+            });
         });
       </script>
 
